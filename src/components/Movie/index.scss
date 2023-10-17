@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+.movie__container {
+    height: auto;
+    width: 30em;
+    display: block;
+    justify-content: center;
+    border: 1spx solid lightgray;
+    margin: 10em;
+    overflow: hidden;
+    border-radius: 3em;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.movie__poster__box {
+    height: 30em;
+    width: auto;
+    display: flex;
+    margin: .5em;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    overflow: hidden;
+    border-radius: 2.7em 2.7em .5em .5em;
+}
+
+.movie__poster__img {
+    height: auto;
+    width: 100%;
+}
+
+.movie__poster__title {
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    top: 45%; /* Adjust as needed to vertically center the heading */
+    left: 50%; /* Adjust as needed to horizontally center the heading */
+    transform: translate(-50%, -50%);
+    border-radius: .2em;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a background color with some transparency */
+    color: white; /* Set the text color */
+    padding: .1em .3em .1em .3em; /* Adjust as needed for spacing around the text */
+    z-index: 1; /* Place the heading above the image */
+    font-size: 2em;
+  }
+
+  .movie__poster__add {
+    font-family: 'Raleway', sans-serif;
+    height: 3em;
+    padding-bottom: .3em;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
