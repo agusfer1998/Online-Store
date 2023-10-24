@@ -1,0 +1,28 @@
+.topBar {
+    width: 100%;
+    height: 10%;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.topBar__logo {
+    display: flex;
+    justify-content: center;
+}
+
+.topBar__logo__image {
+    margin: 1em 1em 1em 2em;
+}
+
+.topBar__logo__title {
+    color: white;
+    padding-bottom: .15em;
+}
+
+.topBar__links {
+    list-style-type: none;
+    display: inline;
+}

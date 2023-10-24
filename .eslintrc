@@ -3,7 +3,8 @@
   "extends": [
     "airbnb",
     "plugin:import/errors",
-    "plugin:import/warnings"
+    "plugin:import/warnings",
+    "prettier"
   ],
   "env": {
     "browser": true,
@@ -14,7 +15,8 @@
   "plugins": [
     "react",
     "module-resolver",
-    "sort-keys-fix"
+    "sort-keys-fix",
+    "prettier"
   ],
   "parserOptions": {
     "ecmaVersion": 6,
@@ -24,6 +26,7 @@
     }
   },
   "rules": {
+    "prettier/prettier": ["error"],
     "camelcase": 0,
     "default-param-last": 0,
     "sort-keys-fix/sort-keys-fix": "warn",
@@ -34,18 +37,9 @@
         "unnamedComponents": "arrow-function"
       }
     ],
-    "arrow-parens": [
-      "error",
-      "always"
-    ],
-    "arrow-body-style": [
-      2,
-      "as-needed"
-    ],
-    "comma-dangle": [
-      2,
-      "always-multiline"
-    ],
+    "arrow-parens": ["error", "always"],
+    "arrow-body-style": [2, "as-needed"],
+    "comma-dangle": [2, "always-multiline"],
     "import/no-duplicates": 0,
     "import/imports-first": 0,
     "import/newline-after-import": 0,
@@ -68,14 +62,9 @@
     "jsx-a11y/label-has-for": [
       2,
       {
-        "components": [
-          "Label"
-        ],
+        "components": ["Label"],
         "required": {
-          "some": [
-            "nesting",
-            "id"
-          ]
+          "some": ["nesting", "id"]
         },
         "allowChildren": false
       }
@@ -94,10 +83,7 @@
     "prefer-template": 2,
     "class-methods-use-this": 0,
     "react/forbid-prop-types": 0,
-    "react/jsx-first-prop-new-line": [
-      2,
-      "multiline"
-    ],
+    "react/jsx-first-prop-new-line": [2, "multiline"],
     "react/jsx-filename-extension": 0,
     "react/jsx-one-expression-per-line": 0,
     "react/jsx-no-target-blank": 0,
@@ -107,16 +93,10 @@
     "require-yield": 0,
     "import/no-webpack-loader-syntax": 0,
     "quote-props": 0,
-    "no-return-assign": [
-      2,
-      "except-parens"
-    ],
-    "sort-keys": [
-      "error",
-      "asc"
-    ],
+    "no-return-assign": [2, "except-parens"],
+    "sort-keys": ["error", "asc"],
     "global-require": 0,
     "react/jsx-props-no-spreading": 0,
-    "react/require-default-props" : 0
+    "react/require-default-props": 0
   }
 }

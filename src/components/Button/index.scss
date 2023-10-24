@@ -1,0 +1,19 @@
+@import '../../theme/index.scss';
+
+.custom-button {
+  background-color: $color-primary;
+
+  &--secondary {
+    background-color: $color-secundary;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__icon {
+  width: 1.5em;
+}
